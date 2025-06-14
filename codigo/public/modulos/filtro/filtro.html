@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Receitas - Éfood</title>
+    <!-- Dependências Externas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Estilos Globais e da Página -->
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="./filtro.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg"></nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="page-header">
+            <h1 class="page-title">Explore as Nossas Receitas</h1>
+            <p id="results-counter" class="results-counter">Carregando receitas...</p>
+        </div>
+
+        <div class="filter-page-layout">
+            <!-- Painel de Filtros Lateral -->
+            <aside class="filter-panel">
+                <div class="filter-sticky-content">
+                    <h4 class="filter-panel-title">Filtros</h4>
+
+                    <div class="filter-group">
+                        <label for="search-input" class="form-label"><i class="fas fa-search me-2"></i>Buscar por Nome</label>
+                        <input type="text" id="search-input" class="form-control" placeholder="Ex: Risoto, Tacos...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="form-label"><i class="fas fa-tags me-2"></i>Categorias</label>
+                        <div id="category-filters" class="category-list">
+                            <!-- Checkboxes de categoria serão inseridos aqui pelo JS -->
+                            <p class="text-muted small">Carregando...</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort-select" class="form-label"><i class="fas fa-sort-alpha-down me-2"></i>Ordenar por</label>
+                        <select id="sort-select" class="form-select">
+                            <option value="default" selected>Padrão</option>
+                            <option value="az">Nome (A-Z)</option>
+                            <option value="za">Nome (Z-A)</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-4">
+                        <button id="clear-filters-btn" class="btn btn-outline-danger w-100" style="display: none;">
+                            <i class="fas fa-times me-2"></i>Limpar Filtros
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Painel de Resultados -->
+            <section id="filter-results" class="results-grid">
+                <!-- Cards de receita serão inseridos aqui pelo JS -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/Scripts/App.js"></script>
+    <script src="./filtro.js"></script>
+</body>
+
+</html>

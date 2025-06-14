@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Área - Éfood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../asssets/styles/style.css">
+    <link rel="stylesheet" href="./user-area.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg"></nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="user-area-header">
+            <h1 class="page-title">Minha Área</h1>
+            <p class="page-subtitle">Bem-vindo(a) de volta, <span id="user-name">Carregando...</span>!</p>
+        </div>
+
+        <section class="user-actions my-5">
+            <a href="../cadastro/cadastro.html" class="btn btn-lg btn-add-recipe">
+                <i class="fas fa-plus-circle me-2"></i>Cadastrar Nova Receita
+            </a>
+        </section>
+
+        <section id="favorites-section">
+            <h2 class="section-subtitle">Minhas Receitas Favoritas</h2>
+            <div id="favorite-dishes" class="dishes-container">
+                <p>Carregando seus favoritos...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../asssets/Scripts/App.js"></script>
+    <script src="./user-area.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Receita - Éfood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg"></nav>
+    </header>
+
+    <!-- Wrapper para aplicar o fundo gradiente da página -->
+    <div class="page-wrapper">
+        <main class="container">
+            <div class="form-page-container">
+                <h1 id="form-title">Cadastrar Nova Receita</h1>
+                <form id="recipe-form" class="recipe-form">
+                    <input type="hidden" id="recipeId">
+
+                    <div class="form-group">
+                        <label for="titulo">Título da Receita</label>
+                        <input type="text" id="titulo" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição Curta</label>
+                        <input type="text" id="descricao" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imagem">URL da Imagem</label>
+                        <input type="url" id="imagem" class="form-input" placeholder="https://exemplo.com/imagem.jpg"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria">Categoria</label>
+                        <input type="text" id="categoria" class="form-input" placeholder="Ex: Prato Principal, Sobremesa..."
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ingredientes">Ingredientes (um por linha)</label>
+                        <textarea id="ingredientes" class="form-textarea" rows="8" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preparo">Modo de Preparo</label>
+                        <textarea id="preparo" class="form-textarea" rows="8" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Salvar Receita</button>
+                        <a href="javascript:history.back()" class="btn-back">Voltar</a>
+                        <button type="button" id="delete-btn" class="btn-delete" style="display: none;">Excluir
+                            Receita</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="../../assets/Scripts/App.js"></script>
+    <script src="./cadastro.js"></script>
+</body>
+
+</html>

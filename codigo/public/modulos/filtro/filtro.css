@@ -1,0 +1,135 @@
+/* ===================================================================
+   CSS REFEITO PARA A PÁGINA DE EXPLORAR RECEITAS (FILTRO)
+   =================================================================== */
+
+/* --- 1. Layout Principal da Página --- */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-weight: 700;
+    color: var(--color-heading-text);
+}
+
+.results-counter {
+    margin-top: 0.5rem;
+    color: var(--color-body-text);
+    font-size: 1.1rem;
+    min-height: 1.5rem; /* Evita que o layout "pule" quando o texto aparece */
+}
+
+.filter-page-layout {
+    display: grid;
+    /* Coluna de filtro com largura fixa e o restante para os resultados */
+    grid-template-columns: 280px 1fr; 
+    gap: 2.5rem;
+}
+
+/* --- 2. Painel Lateral de Filtros (Aside Melhorado) --- */
+
+.filter-panel {
+    /* Mantém o painel visível durante a rolagem */
+    position: sticky;
+    top: 2rem;
+    align-self: start; /* Alinha o painel ao topo do grid */
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Scrollbar personalizada para navegadores Webkit (Chrome, Safari) */
+.filter-panel::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.filter-panel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.filter-panel-title {
+    font-weight: 600;
+    color: var(--color-secondary-accent);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-primary-accent);
+}
+
+.filter-group {
+    margin-bottom: 2rem;
+}
+
+.filter-group .form-label {
+    font-weight: 500;
+    color: var(--color-heading-text);
+    margin-bottom: 0.75rem;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* Espaçamento menor para um visual mais compacto */
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.form-check {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.form-check:hover {
+    background-color: var(--color-primary-accent);
+}
+
+.form-check-label {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* --- 3. Grelha de Resultados --- */
+
+.results-grid {
+    display: grid;
+    /* Usa a mesma classe '.dish' do style.css para consistência */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    align-content: start;
+}
+
+
+/* --- 4. Responsividade --- */
+
+@media (max-width: 992px) {
+    .filter-page-layout {
+        /* Layout de coluna única em ecrãs menores */
+        grid-template-columns: 1fr; 
+    }
+
+    .filter-panel {
+        position: static; /* Remove o comportamento fixo */
+        height: auto;
+        margin-bottom: 3rem;
+        overflow-y: visible; /* Remove a rolagem interna */
+    }
+}
+
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

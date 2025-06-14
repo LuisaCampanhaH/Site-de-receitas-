@@ -1,0 +1,185 @@
+/* ===================================================================
+   ARQUIVO CSS FINAL E DEFINITIVO - Com Ajustes de Camadas (z-index)
+   =================================================================== */
+
+/* --- 1. CONFIGURAÇÃO GLOBAL E TEMA --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-bg: #F4FBF8;
+    --color-primary-accent: #E0F8F0;
+    --color-secondary-accent: #775084;
+    --color-heading-text: #4C3B54;
+    --color-body-text: #555;
+    --color-white: #ffffff;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main#content {
+    flex-grow: 1;
+}
+
+/* --- 2. HEADER E BUSCA --- */
+/* CORREÇÃO DE SOBREPOSIÇÃO DO HEADER */
+header .navbar {
+    background-color: var(--color-white) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    padding: 0.8rem 5% !important;
+    /* Adicionado para garantir que o header fique sempre na camada superior */
+    position: relative;
+    z-index: 10;
+}
+
+.search-section {
+    background-color: var(--color-primary-accent);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+/* --- 3. CARROSSEL COM HIERARQUIA DE CAMADAS CORRIGIDA --- */
+#mainCarousel {
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 2rem auto;
+    max-width: 1200px;
+    position: relative; /* Necessário para o z-index dos filhos funcionar */
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* CORREÇÃO: O link agora tem prioridade sobre a legenda */
+.carousel-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Camada 2: O link clicável */
+}
+
+/* CORREÇÃO: A legenda fica abaixo do link, mas acima da imagem de fundo */
+.carousel-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 15%;
+    right: 15%;
+    color: var(--color-white);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Melhora a legibilidade */
+    z-index: 1; /* Camada 1: A legenda */
+}
+
+/* Os botões de controle precisam estar na camada mais alta para garantir o clique */
+#mainCarousel .carousel-control-prev,
+#mainCarousel .carousel-control-next {
+    z-index: 3; /* Camada 3: Botões ficam acima de tudo */
+}
+
+/* --- 4. CARDS DE RECEITA COM IMAGENS AJUSTADAS --- */
+#menu {
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.section-subtitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-heading-text);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dish {
+    background: var(--color-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.dish img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.dish-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-heading-text);
+    margin-bottom: 0.5rem;
+}
+
+/* --- 5. FOOTER E RESPONSIVIDADE --- */
+.footer {
+    background-color: var(--color-heading-text);
+    color: #e0e0e0;
+    padding: 4rem 5% 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    #mainCarousel {
+        height: 40vh;
+        border-radius: 0;
+    }
+
+    #dishes {
+        grid-template-columns: 1fr;
+    }
+}

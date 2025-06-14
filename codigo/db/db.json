@@ -1,0 +1,232 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "imagem": "images/risoto-cogumelos.jpg",
+      "titulo": "Risoto de Cogumelos",
+      "descrição": "Cremoso e aromático, feito com arroz arbóreo, cogumelos frescos e um toque de vinho branco.",
+      "categoria": "Prato Principal",
+      "ingredientes": [
+        "Arroz arbóreo",
+        "Cogumelos frescos",
+        "Vinho branco",
+        "Caldo de legumes",
+        "Cebola",
+        "Alho",
+        "Parmesão",
+        "Manteiga",
+        "Sal",
+        "Pimenta"
+      ],
+      "preparo": "Refogue a cebola e o alho em uma panela, adicione o arroz e mexa por alguns minutos. Adicione o vinho branco e deixe evaporar. Em seguida, vá adicionando o caldo de legumes quente aos poucos, mexendo sempre, até o arroz ficar cozido e cremoso. Em outra frigideira, salteie os cogumelos fatiados com um pouco de manteiga e alho. Adicione os cogumelos ao risoto, finalize com manteiga e parmesão ralado. Ajuste o sal e a pimenta.",
+      "instrucoes": "Sirva imediatamente, decorado com folhas de salsa fresca ou parmesão extra."
+    },
+    {
+      "id": "2",
+      "imagem": "images/salada.jpg",
+      "titulo": "Salada Caesar com Frango",
+      "descrição": "Clássica e refrescante, com alface romana, croutons, parmesão e frango grelhado.",
+      "categoria": "Salada",
+      "ingredientes": [
+        "Alface romana",
+        "Filé de frango",
+        "Pão para croutons",
+        "Azeite",
+        "Alho",
+        "Parmesão ralado",
+        "Ovo",
+        "Mostarda Dijon",
+        "Suco de limão",
+        "Molho inglês",
+        "Anchovas (opcional)",
+        "Sal",
+        "Pimenta do reino"
+      ],
+      "preparo": "Tempere o filé de frango e grelhe até ficar cozido. Deixe esfriar e corte em tiras. Corte o pão em cubos, regue com azeite e alho picado e leve ao forno até dourar para fazer os croutons. Para o molho, em um liquidificador ou processador, misture o ovo (cozido ou cru, dependendo da preferência), mostarda, alho, suco de limão, molho inglês, anchovas (se usar), parmesão, sal e pimenta. Adicione azeite em fio enquanto bate até emulsionar. Lave e seque bem as folhas de alface romana.",
+      "instrucoes": "Em uma tigela grande, misture a alface, o frango grelhado, os croutons e o parmesão. Regue com o molho Caesar e sirva imediatamente."
+    },
+    {
+      "id": "3",
+      "imagem": "images/bolo-chocolate.jpg",
+      "titulo": "Bolo de Chocolate Vegano",
+      "descrição": "Macio e indulgente, sem lactose ou ovos, usando cacau em pó e leite vegetal.",
+      "categoria": "Sobremesa",
+      "ingredientes": [
+        "Farinha de trigo",
+        "Açúcar",
+        "Cacau em pó 100%",
+        "Bicarbonato de sódio",
+        "Fermento em pó",
+        "Sal",
+        "Leite vegetal (soja, amêndoa, etc.)",
+        "Óleo vegetal",
+        "Vinagre (maçã ou branco)",
+        "Essência de baunilha",
+        "Água quente"
+      ],
+      "preparo": "Em uma tigela grande, peneire e misture a farinha, açúcar, cacau, bicarbonato, fermento e sal. Em outra tigela, misture o leite vegetal, óleo, vinagre e baunilha. Despeje os ingredientes líquidos sobre os secos e misture delicadamente até incorporar (não misture demais). Adicione a água quente e misture rapidamente. A massa ficará líquida, é normal.",
+      "instrucoes": "Despeje a massa em uma forma untada e enfarinhada. Asse em forno preaquecido a 180°C por cerca de 30-40 minutos, ou até que um palito inserido no centro saia limpo. Deixe esfriar antes de desenformar. Pode ser servido puro ou com cobertura vegana."
+    },
+    {
+      "id": "4",
+      "imagem": "images/strogonoff-carne.jpg",
+      "titulo": "Strogonoff de Carne",
+      "descrição": "Tradicional e cremoso, com carne macia, molho de creme de leite e champignons.",
+      "categoria": "Prato Principal",
+      "ingredientes": [
+        "Carne (filé mignon, patinho) cortada em tiras",
+        "Cebola picada",
+        "Alho picado",
+        "Champignons fatiados",
+        "Manteiga ou azeite",
+        "Conhaque (opcional)",
+        "Molho de tomate ou extrato de tomate",
+        "Mostarda",
+        "Ketchup",
+        "Creme de leite",
+        "Sal",
+        "Pimenta do reino"
+      ],
+      "preparo": "Em uma panela grande, derreta a manteiga ou aqueça o azeite em fogo alto. Doure as tiras de carne em pequenas porções para não juntar água e reserve. Na mesma panela, refogue a cebola e o alho até ficarem macios. Adicione os champignons e refogue por mais alguns minutos. Se usar conhaque, despeje na panela, incline levemente para flambar (com cuidado!) e deixe o álcool evaporar. Adicione o molho de tomate, mostarda e ketchup, misture bem. Retorne a carne para a panela, tempere com sal e pimenta. Reduza o fogo e cozinhe por alguns minutos para apurar os sabores. Desligue o fogo e adicione o creme de leite, misturando delicadamente até incorporar e o molho ficar cremoso.",
+      "instrucoes": "Não deixe o creme de leite ferver depois de adicionado para não talhar. Sirva quente acompanhado de arroz branco e batata palha."
+    },
+    {
+      "id": "5",
+      "imagem": "images/tacos.jpg",
+      "titulo": "Tacos de Peixe",
+      "descrição": "Leves e saborosos, com filé de peixe empanado, repolho roxo e molho de iogurte.",
+      "categoria": "Lanche",
+      "ingredientes": [
+        "Filé de peixe branco (tilápia, merluza)",
+        "Farinha de trigo",
+        "Ovo batido",
+        "Farinha de rosca ou Panko",
+        "Óleo para fritar",
+        "Tortilhas de trigo ou milho",
+        "Repolho roxo fatiado fino",
+        "Coentro picado",
+        "Limão",
+        "Iogurte natural",
+        "Maionese",
+        "Molho Sriracha (opcional)",
+        "Alho em pó",
+        "Páprica",
+        "Cominho",
+        "Sal",
+        "Pimenta do reino"
+      ],
+      "preparo": "Corte o filé de peixe em tiras ou cubos. Tempere com sal, pimenta, alho em pó, páprica e cominho. Passe o peixe na farinha de trigo, depois no ovo batido e por último na farinha de rosca/Panko. Frite em óleo quente até dourar e ficar crocante. Escorra em papel toalha. Prepare o molho misturando iogurte, maionese, um pouco de suco de limão, sal, pimenta e Sriracha (se usar). Fatie o repolho roxo bem fino.",
+      "instrucoes": "Aqueça as tortilhas. Monte os tacos colocando o peixe frito, o repolho roxo fatiado, coentro picado e regue com o molho de iogurte. Sirva com gomos de limão."
+    },
+    {
+      "id": "6",
+      "imagem": "images/nhoque-batata-doce.jpg",
+      "titulo": "Nhoque de Batata Doce",
+      "descrição": "Massa saudável e colorida, servida com molho de manteiga e sálvia.",
+      "categoria": "Massa",
+      "ingredientes": [
+        "Batata doce",
+        "Farinha de trigo (aproximadamente)",
+        "Sal",
+        "Manteiga",
+        "Folhas de sálvia fresca",
+        "Parmesão ralado (opcional)"
+      ],
+      "preparo": "Cozinhe a batata doce com casca até ficar bem macia. Descasque ainda quente e passe por um espremedor ou amasse bem com um garfo. Deixe esfriar um pouco. Em uma superfície limpa, coloque a batata doce amassada, adicione sal e vá incorporando a farinha de trigo aos poucos, misturando delicadamente até obter uma massa macia que não grude nas mãos (não sove demais). Modele rolinhos com a massa e corte os nhoques. Se desejar, passe um garfo sobre cada nhoque para criar ranhuras. Cozinhe os nhoques em água fervente com sal. Eles estarão prontos quando subirem à superfície.",
+      "instrucoes": "Enquanto os nhoques cozinham, derreta a manteiga em uma frigideira em fogo médio. Adicione as folhas de sálvia e deixe fritar até ficarem crocantes e a manteiga dourar levemente (cuidado para não queimar). Retire os nhoques cozidos com uma escumadeira e coloque diretamente na frigideira com a manteiga e sálvia. Misture delicadamente para envolver os nhoques no molho. Sirva imediatamente, opcionalmente polvilhado com parmesão ralado."
+    },
+    {
+      "id": "7",
+      "imagem": "images/cuzcuz.jpg",
+      "titulo": "Cuscuz Marroquino",
+      "descrição": "Temperado e nutritivo, feito com sêmola, legumes e especiarias.",
+      "categoria": "Acompanhamento",
+      "ingredientes": [
+        "Cuscuz marroquino (sêmola)",
+        "Caldo de legumes quente",
+        "Azeite",
+        "Cebola picada",
+        "Alho picado",
+        "Cenoura em cubos pequenos",
+        "Abobrinha em cubos pequenos",
+        "Pimentão (qualquer cor) em cubos pequenos",
+        "Uvas-passas",
+        "Amêndoas laminadas ou castanhas picadas (opcional)",
+        "Especiarias (cominho em pó, cúrcuma em pó, canela em pó - pitada)",
+        "Sal",
+        "Pimenta do reino",
+        "Hortelã ou salsinha picada (para finalizar)"
+      ],
+      "preparo": "Hidrate o cuscuz com caldo quente. Em uma frigideira, aqueça o azeite e refogue a cebola e o alho. Adicione a cenoura, abobrinha e pimentão e refogue até ficarem macios, mas ainda crocantes. Tempere com sal, pimenta e as especiarias. Adicione as uvas-passas e as amêndoas/castanhas (se usar) aos legumes refogados. Solte os grãos do cuscuz hidratado com um garfo.",
+      "instrucoes": "Misture os legumes refogados ao cuscuz hidratado, soltando bem os grãos com um garfo. Finalize com hortelã ou salsinha picada. Sirva morno ou em temperatura ambiente. Pode ser um acompanhamento ou prato principal leve."
+    },
+    {
+      "id": "8",
+      "imagem": "images/pudim-leite-condensado.jpg",
+      "titulo": "Pudim de Leite Condensado",
+      "descrição": "Doce e caramelizado, a sobremesa perfeita para qualquer ocasião.",
+      "categoria": "Sobremesa",
+      "ingredientes": [
+        "Leite condensado",
+        "Leite (use a lata de leite condensado para medir)",
+        "Ovos inteiros",
+        "Gemas (opcional, para mais cremosidade)",
+        "Açúcar (para a calda)",
+        "Água (para a calda)"
+      ],
+      "preparo": "Para a calda, coloque o açúcar em uma forma de pudim e leve ao fogo baixo, mexendo ocasionalmente, até derreter e formar um caramelo dourado. Com cuidado, incline a forma para espalhar a calda pelas laterais. Deixe esfriar. Para o pudim, no liquidificador, bata o leite condensado, o leite, os ovos e as gemas (se usar) até obter uma mistura homogênea. Não bata demais para não criar muita espuma. Despeje a mistura do pudim sobre a calda já fria na forma.",
+      "instrucoes": "Cubra a forma com papel alumínio (o lado brilhante para baixo). Coloque a forma de pudim dentro de uma forma maior com água (banho-maria). Leve ao forno preaquecido a 180°C por cerca de 1 hora a 1 hora e 30 minutos, ou até o pudim firmar (faça o teste do palito - ele deve sair quase limpo, mas o centro ainda pode estar um pouco mole, pois firmará ao esfriar). Retire do forno e do banho-maria. Deixe esfriar completamente em temperatura ambiente e depois leve à geladeira por pelo menos 4 horas (idealmente da noite para o dia) antes de desenformar. Para desenformar, aqueça rapidamente o fundo da forma em fogo baixo ou em água quente para soltar o caramelo, e vire sobre um prato."
+    },
+    {
+      "id": "9",
+      "imagem": "images/lasanha.jpg",
+      "titulo": "Lasanha de Berinjela",
+      "descrição": "Opção low-carb, com camadas de berinjela, queijo e molho de tomate caseiro.",
+      "categoria": "Prato Principal",
+      "ingredientes": [
+        "Berinjelas grandes",
+        "Molho de tomate caseiro ou de boa qualidade",
+        "Queijo muçarela fatiado ou ralado",
+        "Queijo parmesão ralado",
+        "Manjericão fresco",
+        "Azeite",
+        "Sal",
+        "Pimenta do reino"
+      ],
+      "preparo": "Lave e corte as berinjelas em fatias finas no sentido do comprimento. Polvilhe sal sobre as fatias e deixe descansar por cerca de 20-30 minutos para liberar o excesso de água e amargor. Enxágue as fatias em água corrente e seque bem com papel toalha. Grelhe ou asse as fatias de berinjela em uma frigideira untada com azeite ou em uma assadeira até ficarem macias e levemente douradas. Em um refratário, monte as camadas: uma fina camada de molho de tomate no fundo, uma camada de fatias de berinjela, molho de tomate, queijo muçarela e folhas de manjericão. Repita as camadas até terminarem os ingredientes, finalizando com queijo muçarela e parmesão ralado.",
+      "instrucoes": "Leve ao forno preaquecido a 180°C por cerca de 20-30 minutos, ou até gratinar e borbulhar. Deixe descansar por alguns minutos antes de servir."
+    },
+    {
+      "id": "10",
+      "imagem": "images/smoothie-frutas-vermelhas.jpg",
+      "titulo": "Smoothie de Frutas Vermelhas",
+      "descrição": "Refrescante e energético, feito com mix de frutas vermelhas, iogurte e mel.",
+      "categoria": "Bebida",
+      "ingredientes": [
+        "Frutas vermelhas congeladas",
+        "Iogurte natural (integral ou desnatado)",
+        "Leite (opcional, para ajustar a consistência)",
+        "Mel ou outro adoçante a gosto",
+        "Banana (opcional, para cremosidade e doçura)",
+        "Gelo (opcional, se as frutas não estiverem congeladas o suficiente)"
+      ],
+      "preparo": "Coloque as frutas vermelhas congeladas, o iogurte natural, o mel e a banana (se usar) no liquidificador. Adicione um pouco de leite ou água se desejar uma consistência mais líquida. Se as frutas não estiverem congeladas, adicione alguns cubos de gelo.",
+      "instrucoes": "Bata em velocidade alta até obter uma mistura completamente homogênea e cremosa. Prove e ajuste o adoçante se necessário. Sirva imediatamente em copos altos."
+    }
+  ],
+  "users": [
+    {
+      "id": "2fb6",
+      "nome": "Luisa",
+      "email": "campanhaluisa@gmail.com",
+      "senha": "123"
+    },
+    {
+      "id": "d947",
+      "nome": "Luisa",
+      "email": "campanhaluisa@gmail.com",
+      "senha": "123"
+    }
+  ],
+  "favorites": []
+}
