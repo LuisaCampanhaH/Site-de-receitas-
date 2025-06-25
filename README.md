@@ -70,30 +70,31 @@ npm start
 Abra a aplicação no navegador:
 Após iniciar o servidor, a aplicação estará disponível em http://localhost:3000.
 
-📁 Estrutura de Pastas
-O projeto está organizado da seguinte forma dentro da pasta codigo:
+<details>
+  <summary>📁 Estrutura de Pastas</summary>
 
+```plaintext
 codigo/
 ├── db/
-│   └── db.json         # Base de dados (receitas, utilizadores, favoritos)
-├── node_modules/       # Dependências do Node.js
+│   └── db.json              # Base de dados (receitas, utilizadores, favoritos)
+├── node_modules/            # Dependências do Node.js
 ├── public/
 │   ├── assets/
-│   │   ├── Scripts/    # Ficheiros JavaScript (App.js, main.js, etc.)
-│   │   └── styles/     # Ficheiros de estilo CSS
-│   ├── images/         # Imagens das receitas
-│   └── modulos/        # Sub-pastas para cada funcionalidade (login, cadastro, etc.)
-│       ├── cadastro/
-│       ├── favoritos/
-│       ├── filtro/
-│       ├── login/
-│       └── MinhaArea/
-│   ├── detalhes.html   # Página de detalhes da receita
-│   └── index.html      # Página inicial
-├── index.js            # Configuração do json-server (não utilizado no start script)
-├── package.json        # Definições do projeto e scripts
-└── README.md           # Este ficheiro
-
+│   │   ├── Scripts/         # Ficheiros JavaScript (App.js, main.js, etc.)
+│   │   ├── styles/          # Ficheiros de estilo CSS
+│   │   └── images/          # Imagens das receitas
+│   └── modulos/
+│       ├── cadastro/        # Sub-pasta de cadastro
+│       ├── favoritos/       # Sub-pasta de favoritos
+│       ├── filtro/          # Sub-pasta de filtro
+│       ├── login/           # Sub-pasta de login
+│       └── MinhaArea/       # Sub-pasta da área do utilizador
+├── detalhes.html            # Página de detalhes da receita
+├── index.html               # Página inicial
+├── index.js                 # Configuração do json-server (não usado no start script)
+├── package.json             # Definições do projeto e scripts
+└── README.md                # Este ficheiro
+```
 👤 Autor
 Luisa Campanha
 
